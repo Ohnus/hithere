@@ -30,5 +30,6 @@ ${msg }
 <jsp:include page="${view }"/>
 </c:if>
 </div>
+라라라ㅏ라라라라라라라라라~~~~~~
 </body>
 </html>
