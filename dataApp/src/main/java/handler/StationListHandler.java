@@ -17,7 +17,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import xml.BusVo;
 import xml.StationVo;
 
 public class StationListHandler implements Handler {
@@ -46,7 +45,7 @@ public class StationListHandler implements Handler {
 			ArrayList<StationVo> list= new ArrayList<>();
 			NodeList stationlist = root.getElementsByTagName("itemList"); // 검색한 숫자가 포함된 모든 버스정보를 보여줌
 			// itemList 태그에 한 버스의 정보가 담기므로 리스트에 itemList 정보 담아서 for문으로 검색된 숫자 포함된 버스 목록 모두 출력하기
-			String bueRouteNm = "";
+			String busRouteNm = "";
 			for(int i=0; i<stationlist.getLength(); i++) {
 				Element station = (Element) stationlist.item(i);
 				String seq = station.getElementsByTagName("seq").item(0).getTextContent();
@@ -58,6 +57,7 @@ public class StationListHandler implements Handler {
 								
 				list.add(new StationVo(seq, stationNm, direction, gpsX, gpsY, arsId));
 			}
+			request.setAttribute("busRouteNm", busRouteNm);
 			request.setAttribute("list", list);
 			
 		} catch (MalformedURLException e) {

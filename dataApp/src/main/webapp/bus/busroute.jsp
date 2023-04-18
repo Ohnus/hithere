@@ -12,7 +12,7 @@
 <table border="1">
 <c:forEach var="vo" items="${list }">
 <tr>
-<td rowspan="7">${vo.busRouteNm }<br/><a href="${pageContext.request.contextPath }/busstation/load.do?busid=${vo.busRouteId }">노선확인</a></td>
+<td rowspan="7">${vo.busRouteNm }<br/><a href="${pageContext.request.contextPath }/busstation/load.doㅈㅁㄴㅁ?busid=${vo.busRouteId }">노선확인</a></td>
 <th>노선 id</th><td>${vo.busRouteId }</td>
 </tr>
 <tr><th>운수회사</th><td>${vo.corpNm }</td></tr>
