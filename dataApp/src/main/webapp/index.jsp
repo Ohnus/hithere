@@ -12,8 +12,12 @@
 <a href="${pageContext.request.contextPath }/json/load.do">json 데이터 확인</a><br/>
 <a href="${pageContext.request.contextPath }/xml/load.do">xml 데이터 확인</a><br/>
 <a href="${pageContext.request.contextPath }/weather/load.do">weather 데이터 확인</a><br/>
-<form action="${pageContext.request.contextPath }/bus/load.do" method="post">
+<form action="${pageContext.request.contextPath }/businfo/load.do" method="post">
 버스노선id:<input type="text" name="busid">
+<input type="submit" value="검색">
+</form>
+<form action="${pageContext.request.contextPath }/busroute/load.do" method="post">
+버스번호:<input type="text" name="busnm">
 <input type="submit" value="검색">
 </form>
 </body>
