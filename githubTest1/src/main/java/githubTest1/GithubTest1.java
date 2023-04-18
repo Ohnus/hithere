@@ -9,17 +9,19 @@ public class GithubTest1 {
 	private String title;
 	private String content;
 	private Date wdate;
+	private String rply;
 	
 	public GithubTest1() {
 	}
 	
-	public GithubTest1(int num, String wirter, String title, String content, Date wdate) {
+	public GithubTest1(int num, String wirter, String title, String content, Date wdate, String rply) {
 		super();
 		this.num = num;
 		this.wirter = wirter;
 		this.title = title;
 		this.content = content;
 		this.wdate = wdate;
+		this.rply = rply;
 	}
 
 	public int getNum() {
@@ -61,11 +63,20 @@ public class GithubTest1 {
 	public void setWdate(Date wdate) {
 		this.wdate = wdate;
 	}
+	
+
+	public String getRply() {
+		return rply;
+	}
+
+	public void setRply(String rply) {
+		this.rply = rply;
+	}
 
 	@Override
 	public String toString() {
 		return "GithubTest1 [num=" + num + ", wirter=" + wirter + ", title=" + title + ", content=" + content
-				+ ", wdate=" + wdate + "]";
+				+ ", wdate=" + wdate + ", rply=" + rply + "]";
 	}
-	
+
 }
