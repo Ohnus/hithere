@@ -23,7 +23,7 @@ public class BusHandler implements Handler {
 
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) {
-		String urlstr = "http://ws.bus.go.kr/api/rest/busRouteInfo/getRouteInfo?ServiceKey=BYgs6%2FjSL0du1z8yK4GxYdW1SepukkJ0gXtUP3tGUQpjThEU4JeQKRlspdSnxTWcjia6U6r5oPxW%2F7tK7HZ2sg%3D%3D&busRouteId=";
+		String urlstr = "http://ws.bus.go.kr/api/rest/busRouteInfo/getRouteInfo?ServiceKey=&busRouteId=";
 		String busid = request.getParameter("busid");
 		urlstr += busid;
 		try {
