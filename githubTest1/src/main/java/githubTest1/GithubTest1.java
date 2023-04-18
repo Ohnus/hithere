@@ -63,7 +63,7 @@ public class GithubTest1 {
 
 	@Override
 	public String toString() {
-		return "GithubTest_1 [num=" + num + ", wirter=" + wirter + ", title=" + title + ", content=" + content
+		return "GithubTest1 [num=" + num + ", wirter=" + wirter + ", title=" + title + ", content=" + content
 				+ ", wdate=" + wdate + "]";
 	}
 	
