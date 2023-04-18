@@ -3,17 +3,17 @@ package githubTest1;
 import java.sql.Date;
 
 // github test1
-public class GithubTest1Vo {
+public class GithubTest1 {
 	private int num; 
 	private String wirter;
 	private String title;
 	private String content;
 	private Date wdate;
 	
-	public GithubTest1Vo() {
+	public GithubTest1() {
 	}
 	
-	public GithubTest1Vo(int num, String wirter, String title, String content, Date wdate) {
+	public GithubTest1(int num, String wirter, String title, String content, Date wdate) {
 		super();
 		this.num = num;
 		this.wirter = wirter;
