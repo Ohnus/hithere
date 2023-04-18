@@ -2,8 +2,9 @@ package githubTest1;
 
 import java.sql.Date;
 
+// github test1
 public class GithubTest1 {
-	private int num;
+	private int num; 
 	private String wirter;
 	private String title;
 	private String content;
